@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF3384EE18E1659E000122A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384ED18E1659E000122A9 /* Foundation.framework */; };
+		DF3384F018E1659E000122A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384EF18E1659E000122A9 /* CoreGraphics.framework */; };
+		DF3384F218E1659E000122A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384F118E1659E000122A9 /* UIKit.framework */; };
+		DF3384F818E1659E000122A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF3384F618E1659E000122A9 /* InfoPlist.strings */; };
+		DF3384FA18E1659E000122A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3384F918E1659E000122A9 /* main.m */; };
+		DF3384FE18E1659E000122A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3384FD18E1659E000122A9 /* AppDelegate.m */; };
+		DF33850018E1659E000122A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF3384FF18E1659E000122A9 /* Images.xcassets */; };
+		DF33850718E1659E000122A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF33850618E1659E000122A9 /* XCTest.framework */; };
+		DF33850818E1659E000122A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384ED18E1659E000122A9 /* Foundation.framework */; };
+		DF33850918E1659E000122A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384F118E1659E000122A9 /* UIKit.framework */; };
+		DF33851118E1659E000122A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF33850F18E1659E000122A9 /* InfoPlist.strings */; };
+		DF33851318E1659E000122A9 /* WaitTimesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DF33851218E1659E000122A9 /* WaitTimesTests.m */; };
+		DF33851F18E16687000122A9 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF33851C18E16687000122A9 /* OpenSans-Bold.ttf */; };
+		DF33852018E16687000122A9 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF33851D18E16687000122A9 /* OpenSans-Light.ttf */; };
+		DF33852118E16687000122A9 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF33851E18E16687000122A9 /* OpenSans-Regular.ttf */; };
+		DF33852418E16784000122A9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF33852318E16784000122A9 /* MainStoryboard.storyboard */; };
+		DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF33850A18E1659E000122A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF3384E218E1659E000122A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF3384E918E1659E000122A9;
+			remoteInfo = WaitTimes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF3384EA18E1659E000122A9 /* WaitTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF3384ED18E1659E000122A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DF3384EF18E1659E000122A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DF3384F118E1659E000122A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DF3384F518E1659E000122A9 /* WaitTimes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaitTimes-Info.plist"; sourceTree = "<group>"; };
+		DF3384F718E1659E000122A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF3384F918E1659E000122A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DF3384FB18E1659E000122A9 /* WaitTimes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaitTimes-Prefix.pch"; sourceTree = "<group>"; };
+		DF3384FC18E1659E000122A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DF3384FD18E1659E000122A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DF3384FF18E1659E000122A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DF33850518E1659E000122A9 /* WaitTimesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaitTimesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF33850618E1659E000122A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DF33850E18E1659E000122A9 /* WaitTimesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WaitTimesTests-Info.plist"; sourceTree = "<group>"; };
+		DF33851018E1659E000122A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DF33851218E1659E000122A9 /* WaitTimesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaitTimesTests.m; sourceTree = "<group>"; };
+		DF33851C18E16687000122A9 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DF33851D18E16687000122A9 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		DF33851E18E16687000122A9 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DF33852318E16784000122A9 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlanceBridgeCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF3384E718E1659E000122A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3384F018E1659E000122A9 /* CoreGraphics.framework in Frameworks */,
+				DF3384F218E1659E000122A9 /* UIKit.framework in Frameworks */,
+				DF3384EE18E1659E000122A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33850218E1659E000122A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF33850718E1659E000122A9 /* XCTest.framework in Frameworks */,
+				DF33850918E1659E000122A9 /* UIKit.framework in Frameworks */,
+				DF33850818E1659E000122A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF3384E118E1659E000122A9 = {
+			isa = PBXGroup;
+			children = (
+				DF3384F318E1659E000122A9 /* WaitTimes */,
+				DF33850C18E1659E000122A9 /* WaitTimesTests */,
+				DF3384EC18E1659E000122A9 /* Frameworks */,
+				DF3384EB18E1659E000122A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF3384EB18E1659E000122A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF3384EA18E1659E000122A9 /* WaitTimes.app */,
+				DF33850518E1659E000122A9 /* WaitTimesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF3384EC18E1659E000122A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF3384ED18E1659E000122A9 /* Foundation.framework */,
+				DF3384EF18E1659E000122A9 /* CoreGraphics.framework */,
+				DF3384F118E1659E000122A9 /* UIKit.framework */,
+				DF33850618E1659E000122A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF3384F318E1659E000122A9 /* WaitTimes */ = {
+			isa = PBXGroup;
+			children = (
+				DF33852318E16784000122A9 /* MainStoryboard.storyboard */,
+				DF3384FC18E1659E000122A9 /* AppDelegate.h */,
+				DF3384FD18E1659E000122A9 /* AppDelegate.m */,
+				DF3384FF18E1659E000122A9 /* Images.xcassets */,
+				DF3384F418E1659E000122A9 /* Supporting Files */,
+				DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */,
+			);
+			path = WaitTimes;
+			sourceTree = "<group>";
+		};
+		DF3384F418E1659E000122A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF33852218E16693000122A9 /* fonts */,
+				DF3384F518E1659E000122A9 /* WaitTimes-Info.plist */,
+				DF3384F618E1659E000122A9 /* InfoPlist.strings */,
+				DF3384F918E1659E000122A9 /* main.m */,
+				DF3384FB18E1659E000122A9 /* WaitTimes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF33850C18E1659E000122A9 /* WaitTimesTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF33851218E1659E000122A9 /* WaitTimesTests.m */,
+				DF33850D18E1659E000122A9 /* Supporting Files */,
+			);
+			path = WaitTimesTests;
+			sourceTree = "<group>";
+		};
+		DF33850D18E1659E000122A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DF33850E18E1659E000122A9 /* WaitTimesTests-Info.plist */,
+				DF33850F18E1659E000122A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF33852218E16693000122A9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DF33851C18E16687000122A9 /* OpenSans-Bold.ttf */,
+				DF33851D18E16687000122A9 /* OpenSans-Light.ttf */,
+				DF33851E18E16687000122A9 /* OpenSans-Regular.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF3384E918E1659E000122A9 /* WaitTimes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF33851618E1659E000122A9 /* Build configuration list for PBXNativeTarget "WaitTimes" */;
+			buildPhases = (
+				DF3384E618E1659E000122A9 /* Sources */,
+				DF3384E718E1659E000122A9 /* Frameworks */,
+				DF3384E818E1659E000122A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaitTimes;
+			productName = WaitTimes;
+			productReference = DF3384EA18E1659E000122A9 /* WaitTimes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF33850418E1659E000122A9 /* WaitTimesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF33851918E1659E000122A9 /* Build configuration list for PBXNativeTarget "WaitTimesTests" */;
+			buildPhases = (
+				DF33850118E1659E000122A9 /* Sources */,
+				DF33850218E1659E000122A9 /* Frameworks */,
+				DF33850318E1659E000122A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF33850B18E1659E000122A9 /* PBXTargetDependency */,
+			);
+			name = WaitTimesTests;
+			productName = WaitTimesTests;
+			productReference = DF33850518E1659E000122A9 /* WaitTimesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF3384E218E1659E000122A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "V2 Interactive";
+				TargetAttributes = {
+					DF33850418E1659E000122A9 = {
+						TestTargetID = DF3384E918E1659E000122A9;
+					};
+				};
+			};
+			buildConfigurationList = DF3384E518E1659E000122A9 /* Build configuration list for PBXProject "WaitTimes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DF3384E118E1659E000122A9;
+			productRefGroup = DF3384EB18E1659E000122A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF3384E918E1659E000122A9 /* WaitTimes */,
+				DF33850418E1659E000122A9 /* WaitTimesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF3384E818E1659E000122A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF33852118E16687000122A9 /* OpenSans-Regular.ttf in Resources */,
+				DF3384F818E1659E000122A9 /* InfoPlist.strings in Resources */,
+				DF33850018E1659E000122A9 /* Images.xcassets in Resources */,
+				DF33852018E16687000122A9 /* OpenSans-Light.ttf in Resources */,
+				DF33851F18E16687000122A9 /* OpenSans-Bold.ttf in Resources */,
+				DF33852418E16784000122A9 /* MainStoryboard.storyboard in Resources */,
+				DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33850318E1659E000122A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF33851118E1659E000122A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF3384E618E1659E000122A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3384FE18E1659E000122A9 /* AppDelegate.m in Sources */,
+				DF3384FA18E1659E000122A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF33850118E1659E000122A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF33851318E1659E000122A9 /* WaitTimesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF33850B18E1659E000122A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF3384E918E1659E000122A9 /* WaitTimes */;
+			targetProxy = DF33850A18E1659E000122A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF3384F618E1659E000122A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF3384F718E1659E000122A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DF33850F18E1659E000122A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF33851018E1659E000122A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF33851418E1659E000122A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DF33851518E1659E000122A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF33851718E1659E000122A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
+				INFOPLIST_FILE = "WaitTimes/WaitTimes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DF33851818E1659E000122A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
+				INFOPLIST_FILE = "WaitTimes/WaitTimes-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		DF33851A18E1659E000122A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaitTimes.app/WaitTimes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WaitTimesTests/WaitTimesTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DF33851B18E1659E000122A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/WaitTimes.app/WaitTimes";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
+				INFOPLIST_FILE = "WaitTimesTests/WaitTimesTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF3384E518E1659E000122A9 /* Build configuration list for PBXProject "WaitTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF33851418E1659E000122A9 /* Debug */,
+				DF33851518E1659E000122A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF33851618E1659E000122A9 /* Build configuration list for PBXNativeTarget "WaitTimes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF33851718E1659E000122A9 /* Debug */,
+				DF33851818E1659E000122A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF33851918E1659E000122A9 /* Build configuration list for PBXNativeTarget "WaitTimesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF33851A18E1659E000122A9 /* Debug */,
+				DF33851B18E1659E000122A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF3384E218E1659E000122A9 /* Project object */;
+}
