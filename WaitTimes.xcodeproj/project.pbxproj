@@ -23,6 +23,9 @@
 		DF33852018E16687000122A9 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF33851D18E16687000122A9 /* OpenSans-Light.ttf */; };
 		DF33852118E16687000122A9 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF33851E18E16687000122A9 /* OpenSans-Regular.ttf */; };
 		DF33852418E16784000122A9 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF33852318E16784000122A9 /* MainStoryboard.storyboard */; };
+		DFCF598718E2B022007447DF /* CA.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCF598418E2B022007447DF /* CA.png */; };
+		DFCF598818E2B022007447DF /* MX.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCF598518E2B022007447DF /* MX.png */; };
+		DFCF598918E2B022007447DF /* US.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCF598618E2B022007447DF /* US.png */; };
 		DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		DF33851D18E16687000122A9 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 		DF33851E18E16687000122A9 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DF33852318E16784000122A9 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		DFCF598418E2B022007447DF /* CA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CA.png; sourceTree = "<group>"; };
+		DFCF598518E2B022007447DF /* MX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MX.png; sourceTree = "<group>"; };
+		DFCF598618E2B022007447DF /* US.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = US.png; sourceTree = "<group>"; };
 		DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlanceBridgeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,9 +126,9 @@
 				DF33852318E16784000122A9 /* MainStoryboard.storyboard */,
 				DF3384FC18E1659E000122A9 /* AppDelegate.h */,
 				DF3384FD18E1659E000122A9 /* AppDelegate.m */,
+				DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */,
 				DF3384FF18E1659E000122A9 /* Images.xcassets */,
 				DF3384F418E1659E000122A9 /* Supporting Files */,
-				DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */,
 			);
 			path = WaitTimes;
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 		DF3384F418E1659E000122A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFCF598A18E2B02F007447DF /* images */,
 				DF33852218E16693000122A9 /* fonts */,
 				DF3384F518E1659E000122A9 /* WaitTimes-Info.plist */,
 				DF3384F618E1659E000122A9 /* InfoPlist.strings */,
@@ -165,6 +172,16 @@
 				DF33851E18E16687000122A9 /* OpenSans-Regular.ttf */,
 			);
 			name = fonts;
+			sourceTree = "<group>";
+		};
+		DFCF598A18E2B02F007447DF /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DFCF598418E2B022007447DF /* CA.png */,
+				DFCF598518E2B022007447DF /* MX.png */,
+				DFCF598618E2B022007447DF /* US.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -247,6 +264,9 @@
 				DF33850018E1659E000122A9 /* Images.xcassets in Resources */,
 				DF33852018E16687000122A9 /* OpenSans-Light.ttf in Resources */,
 				DF33851F18E16687000122A9 /* OpenSans-Bold.ttf in Resources */,
+				DFCF598918E2B022007447DF /* US.png in Resources */,
+				DFCF598818E2B022007447DF /* MX.png in Resources */,
+				DFCF598718E2B022007447DF /* CA.png in Resources */,
 				DF33852418E16784000122A9 /* MainStoryboard.storyboard in Resources */,
 				DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */,
 			);
