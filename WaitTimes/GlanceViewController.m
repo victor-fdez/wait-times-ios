@@ -28,29 +28,10 @@
 {
     [super viewDidLoad];
     
+    //Do some graphical housekeeping, remove the separators given by default in iOS7.
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
 
-//Change of the title fonts for the tableViews
-
-//- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
-//{
-////    UIView *tempView=[[UIView alloc]initWithFrame:CGRectMake(0,200,300,244)];
-////    tempView.backgroundColor=[UIColor clearColor];
-////    
-////    UILabel *tempLabel=[[UILabel alloc]initWithFrame:CGRectMake(15,0,300,44)];
-////    tempLabel.backgroundColor=[UIColor clearColor];
-////    tempLabel.shadowColor = [UIColor blackColor];
-////    tempLabel.shadowOffset = CGSizeMake(0,2);
-////    tempLabel.textColor = [UIColor redColor]; //here you can change the text color of header.
-////    tempLabel.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
-////    tempLabel.text=@"Header Text";
-////    
-////    [tempView addSubview:tempLabel];
-////    
-////    return tempView;
-//    
-//}
 
 - (void)didReceiveMemoryWarning
 {
