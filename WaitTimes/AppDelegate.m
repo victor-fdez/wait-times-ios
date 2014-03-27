@@ -12,10 +12,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor whiteColor];
-//    [self.window makeKeyAndVisible];
+    
+//    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHue:.215 saturation:.15 brightness:.17 alpha:1]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHue:0.5972 saturation:0.29 brightness:0.62 alpha:1], NSForegroundColorAttributeName, [UIFont fontWithName:@"OpenSans-Light" size:21.0], NSFontAttributeName, nil]];
     return YES;
 }
 

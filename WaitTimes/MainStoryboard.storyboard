@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yul-yx-IzG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="yul-yx-IzG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Tab Bar Controller-->
@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="412" y="-193"/>
         </scene>
-        <!--Table View Controller - Glance View-->
+        <!--Glance View Controller - Glance View-->
         <scene sceneID="i1g-pm-OlD">
             <objects>
-                <tableViewController id="R8w-gR-1c8" sceneMemberID="viewController">
+                <tableViewController id="R8w-gR-1c8" customClass="GlanceViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="R2A-gB-IkZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,13 +92,27 @@
                             <outlet property="delegate" destination="R8w-gR-1c8" id="YoW-Pk-s10"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Glance View" id="ln0-Es-XXP"/>
+                    <navigationItem key="navigationItem" title="Glance View" id="ln0-Es-XXP">
+                        <barButtonItem key="leftBarButtonItem" title="Item" style="plain" id="3SK-7L-xjZ">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="79D-FN-b4H">
+                                <rect key="frame" x="16" y="5" width="42" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="menuBtn">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kca-dm-dOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="892" y="-193"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="menuBtn" width="42" height="33"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

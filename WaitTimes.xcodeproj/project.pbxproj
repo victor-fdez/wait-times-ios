@@ -26,6 +26,9 @@
 		DFCF598718E2B022007447DF /* CA.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCF598418E2B022007447DF /* CA.png */; };
 		DFCF598818E2B022007447DF /* MX.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCF598518E2B022007447DF /* MX.png */; };
 		DFCF598918E2B022007447DF /* US.png in Resources */ = {isa = PBXBuildFile; fileRef = DFCF598618E2B022007447DF /* US.png */; };
+		DFEC046318E4AD89007822B1 /* GlanceViewTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC046218E4AD89007822B1 /* GlanceViewTableCell.m */; };
+		DFEC046618E4AEA7007822B1 /* ApplyChangeInFont.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC046518E4AEA7007822B1 /* ApplyChangeInFont.m */; };
+		DFEC046918E4B3E5007822B1 /* GlanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC046818E4B3E5007822B1 /* GlanceViewController.m */; };
 		DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,12 @@
 		DFCF598418E2B022007447DF /* CA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CA.png; sourceTree = "<group>"; };
 		DFCF598518E2B022007447DF /* MX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MX.png; sourceTree = "<group>"; };
 		DFCF598618E2B022007447DF /* US.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = US.png; sourceTree = "<group>"; };
+		DFEC046118E4AD89007822B1 /* GlanceViewTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceViewTableCell.h; sourceTree = "<group>"; };
+		DFEC046218E4AD89007822B1 /* GlanceViewTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceViewTableCell.m; sourceTree = "<group>"; };
+		DFEC046418E4AEA7007822B1 /* ApplyChangeInFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplyChangeInFont.h; sourceTree = "<group>"; };
+		DFEC046518E4AEA7007822B1 /* ApplyChangeInFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplyChangeInFont.m; sourceTree = "<group>"; };
+		DFEC046718E4B3E5007822B1 /* GlanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceViewController.h; sourceTree = "<group>"; };
+		DFEC046818E4B3E5007822B1 /* GlanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceViewController.m; sourceTree = "<group>"; };
 		DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlanceBridgeCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,8 +136,14 @@
 				DF3384FC18E1659E000122A9 /* AppDelegate.h */,
 				DF3384FD18E1659E000122A9 /* AppDelegate.m */,
 				DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */,
+				DFEC046118E4AD89007822B1 /* GlanceViewTableCell.h */,
+				DFEC046218E4AD89007822B1 /* GlanceViewTableCell.m */,
+				DFEC046418E4AEA7007822B1 /* ApplyChangeInFont.h */,
+				DFEC046518E4AEA7007822B1 /* ApplyChangeInFont.m */,
 				DF3384FF18E1659E000122A9 /* Images.xcassets */,
 				DF3384F418E1659E000122A9 /* Supporting Files */,
+				DFEC046718E4B3E5007822B1 /* GlanceViewController.h */,
+				DFEC046818E4B3E5007822B1 /* GlanceViewController.m */,
 			);
 			path = WaitTimes;
 			sourceTree = "<group>";
@@ -287,8 +302,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFEC046618E4AEA7007822B1 /* ApplyChangeInFont.m in Sources */,
 				DF3384FE18E1659E000122A9 /* AppDelegate.m in Sources */,
+				DFEC046918E4B3E5007822B1 /* GlanceViewController.m in Sources */,
 				DF3384FA18E1659E000122A9 /* main.m in Sources */,
+				DFEC046318E4AD89007822B1 /* GlanceViewTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
