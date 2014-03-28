@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PKRevealController.h"
 
 @interface GlanceViewTableCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *glanceViewBridgeTitle;

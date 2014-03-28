@@ -28,6 +28,7 @@
     _glanceViewBridgeTitle.font = [UIFont fontWithName:@"OpenSans-Light" size:27];
     self.glanceViewWaitTimeNumber.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
     self.glanceViewWaitTimeDescription.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

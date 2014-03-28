@@ -10,6 +10,8 @@
 	<string>WaitTimes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>4D1AF310-4C33-433A-B20A-E8223938AAC0</key>
+		<string>https://github.com/pkluz/PKRevealController.git</string>
 		<key>97AEDA32-80E9-457F-9AB3-9725CED96B43</key>
 		<string>https://github.com/victor-fdez/wait-times-ios.git</string>
 	</dict>
@@ -17,6 +19,8 @@
 	<string>WaitTimes.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>4D1AF310-4C33-433A-B20A-E8223938AAC0</key>
+		<string>../../PKRevealController</string>
 		<key>97AEDA32-80E9-457F-9AB3-9725CED96B43</key>
 		<string>../..</string>
 	</dict>
@@ -28,6 +32,14 @@
 	<string>97AEDA32-80E9-457F-9AB3-9725CED96B43</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4D1AF310-4C33-433A-B20A-E8223938AAC0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PKRevealController</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

@@ -21,6 +21,9 @@
 
     #pragma mark - Visual Setup of Login/Signup screen
     self.appTitleAtLoginScreen.font = [UIFont fontWithName:@"OpenSans-light" size:48];
+    
+    //Create a handler for dismissing the keyboard once clicking anything outside of the keyboard
+    
 }
 
 //Hide the Navigation bar for the login screen and the back button.
@@ -101,4 +104,27 @@
     }];
     
 }
+
+- (IBAction)userNameReturnPress:(id)sender {
+    
+    [sender resignFirstResponder];
+    
+}
+
+- (IBAction)passwordReturnPress:(id)sender {
+    
+    [sender resignFirstResponder];
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [[event allTouches] anyObject];
+    if (([_usernameField isFirstResponder] && [touch view] != _usernameField) || ([_passwordField isFirstResponder] && [touch view] != _passwordField)) {
+        [_usernameField resignFirstResponder];
+        [_passwordField resignFirstResponder];
+    }
+    
+}
+
+
 @end

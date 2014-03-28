@@ -43,6 +43,7 @@
 		DFF8166718E5FFFB00D2A7D6 /* CredentialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF8166618E5FFFB00D2A7D6 /* CredentialsViewController.m */; };
 		DFF8166B18E61DCA00D2A7D6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */; };
 		DFF8166E18E627B000D2A7D6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */; };
+		DFF8167618E631DD00D2A7D6 /* libPKRevealController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8167418E6312E00D2A7D6 /* libPKRevealController.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = DF3384E918E1659E000122A9;
 			remoteInfo = WaitTimes;
+		};
+		DFF8167318E6312E00D2A7D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFF8166F18E6312E00D2A7D6 /* PKRevealController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F9621E7B1815246000469E41;
+			remoteInfo = PKRevealController;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -101,6 +109,9 @@
 		DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DFF8166C18E627B000D2A7D6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		DFF8166F18E6312E00D2A7D6 /* PKRevealController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PKRevealController.xcodeproj; path = PKRevealController/Source/PKRevealController.xcodeproj; sourceTree = SOURCE_ROOT; };
+		DFF8167718E6322500D2A7D6 /* PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PKRevealController.h; path = PKRevealController/Headers/PKRevealController.h; sourceTree = SOURCE_ROOT; };
+		DFF8167818E6322500D2A7D6 /* UIViewController+PKRevealController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+PKRevealController.h"; path = "PKRevealController/Headers/UIViewController+PKRevealController.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF8167618E631DD00D2A7D6 /* libPKRevealController.a in Frameworks */,
 				DFF8165C18E5FCE700D2A7D6 /* AudioToolbox.framework in Frameworks */,
 				DFF8165D18E5FCE700D2A7D6 /* CFNetwork.framework in Frameworks */,
 				DFF8165E18E5FCE700D2A7D6 /* CoreLocation.framework in Frameworks */,
@@ -160,6 +172,7 @@
 		DF3384EC18E1659E000122A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFF8166F18E6312E00D2A7D6 /* PKRevealController.xcodeproj */,
 				DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */,
 				DFF8165318E5FCE700D2A7D6 /* AudioToolbox.framework */,
 				DFF8165418E5FCE700D2A7D6 /* CFNetwork.framework */,
@@ -182,6 +195,8 @@
 		DF3384F318E1659E000122A9 /* WaitTimes */ = {
 			isa = PBXGroup;
 			children = (
+				DFF8167718E6322500D2A7D6 /* PKRevealController.h */,
+				DFF8167818E6322500D2A7D6 /* UIViewController+PKRevealController.h */,
 				DF33852318E16784000122A9 /* MainStoryboard.storyboard */,
 				DF3384FC18E1659E000122A9 /* AppDelegate.h */,
 				DF3384FD18E1659E000122A9 /* AppDelegate.m */,
@@ -253,6 +268,14 @@
 			name = images;
 			sourceTree = "<group>";
 		};
+		DFF8167018E6312E00D2A7D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFF8167418E6312E00D2A7D6 /* libPKRevealController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +338,12 @@
 			mainGroup = DF3384E118E1659E000122A9;
 			productRefGroup = DF3384EB18E1659E000122A9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = DFF8167018E6312E00D2A7D6 /* Products */;
+					ProjectRef = DFF8166F18E6312E00D2A7D6 /* PKRevealController.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DF3384E918E1659E000122A9 /* WaitTimes */,
@@ -322,6 +351,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		DFF8167418E6312E00D2A7D6 /* libPKRevealController.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libPKRevealController.a;
+			remoteRef = DFF8167318E6312E00D2A7D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DF3384E818E1659E000122A9 /* Resources */ = {
@@ -488,6 +527,7 @@
 				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
 				INFOPLIST_FILE = "WaitTimes/WaitTimes-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -507,6 +547,7 @@
 				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
 				INFOPLIST_FILE = "WaitTimes/WaitTimes-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

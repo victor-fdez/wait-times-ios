@@ -23,4 +23,8 @@
 - (IBAction)loginActionWithTwitterCredentials:(id)sender;
 - (IBAction)loginActionWithFacebookCredentials:(id)sender;
 
+
+- (IBAction)userNameReturnPress:(id)sender;
+- (IBAction)passwordReturnPress:(id)sender;
+
 @end
