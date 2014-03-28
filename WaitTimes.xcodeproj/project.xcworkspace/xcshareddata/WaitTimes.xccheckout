@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>14313B8F-83B3-4253-8117-C0295A4A12BB</string>
+	<string>5361C8E9-8407-43D0-8517-C9D97112E69B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>WaitTimes</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>A0EB349F-0807-4446-B070-155890DD6E69</key>
-		<string>https://github.com/victor-fdez/wait-times-design.git</string>
+		<key>97AEDA32-80E9-457F-9AB3-9725CED96B43</key>
+		<string>https://github.com/victor-fdez/wait-times-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS/WaitTimes/WaitTimes.xcodeproj/project.xcworkspace</string>
+	<string>WaitTimes.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>A0EB349F-0807-4446-B070-155890DD6E69</key>
-		<string>../../../..</string>
+		<key>97AEDA32-80E9-457F-9AB3-9725CED96B43</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/victor-fdez/wait-times-design.git</string>
+	<string>https://github.com/victor-fdez/wait-times-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A0EB349F-0807-4446-B070-155890DD6E69</string>
+	<string>97AEDA32-80E9-457F-9AB3-9725CED96B43</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A0EB349F-0807-4446-B070-155890DD6E69</string>
+			<string>97AEDA32-80E9-457F-9AB3-9725CED96B43</string>
 			<key>IDESourceControlWCCName</key>
-			<string>wait-times-design</string>
+			<string>wait-times-ios</string>
 		</dict>
 	</array>
 </dict>

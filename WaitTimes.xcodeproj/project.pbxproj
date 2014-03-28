@@ -30,6 +30,19 @@
 		DFEC046618E4AEA7007822B1 /* ApplyChangeInFont.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC046518E4AEA7007822B1 /* ApplyChangeInFont.m */; };
 		DFEC046918E4B3E5007822B1 /* GlanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC046818E4B3E5007822B1 /* GlanceViewController.m */; };
 		DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */; };
+		DFF8165218E5FCA900D2A7D6 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165118E5FCA900D2A7D6 /* Parse.framework */; };
+		DFF8165C18E5FCE700D2A7D6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165318E5FCE700D2A7D6 /* AudioToolbox.framework */; };
+		DFF8165D18E5FCE700D2A7D6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165418E5FCE700D2A7D6 /* CFNetwork.framework */; };
+		DFF8165E18E5FCE700D2A7D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165518E5FCE700D2A7D6 /* CoreLocation.framework */; };
+		DFF8165F18E5FCE700D2A7D6 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165618E5FCE700D2A7D6 /* libz.dylib */; };
+		DFF8166018E5FCE700D2A7D6 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165718E5FCE700D2A7D6 /* MobileCoreServices.framework */; };
+		DFF8166118E5FCE700D2A7D6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165818E5FCE700D2A7D6 /* QuartzCore.framework */; };
+		DFF8166218E5FCE700D2A7D6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165918E5FCE700D2A7D6 /* Security.framework */; };
+		DFF8166318E5FCE700D2A7D6 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165A18E5FCE700D2A7D6 /* StoreKit.framework */; };
+		DFF8166418E5FCE700D2A7D6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8165B18E5FCE700D2A7D6 /* SystemConfiguration.framework */; };
+		DFF8166718E5FFFB00D2A7D6 /* CredentialsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF8166618E5FFFB00D2A7D6 /* CredentialsViewController.m */; };
+		DFF8166B18E61DCA00D2A7D6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */; };
+		DFF8166E18E627B000D2A7D6 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +86,21 @@
 		DFEC046718E4B3E5007822B1 /* GlanceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlanceViewController.h; sourceTree = "<group>"; };
 		DFEC046818E4B3E5007822B1 /* GlanceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlanceViewController.m; sourceTree = "<group>"; };
 		DFF6DE3E18E20DF000758541 /* GlanceBridgeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlanceBridgeCell.xib; sourceTree = "<group>"; };
+		DFF8165118E5FCA900D2A7D6 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		DFF8165318E5FCE700D2A7D6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		DFF8165418E5FCE700D2A7D6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DFF8165518E5FCE700D2A7D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DFF8165618E5FCE700D2A7D6 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		DFF8165718E5FCE700D2A7D6 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		DFF8165818E5FCE700D2A7D6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DFF8165918E5FCE700D2A7D6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		DFF8165A18E5FCE700D2A7D6 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		DFF8165B18E5FCE700D2A7D6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		DFF8166518E5FFFB00D2A7D6 /* CredentialsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CredentialsViewController.h; sourceTree = "<group>"; };
+		DFF8166618E5FFFB00D2A7D6 /* CredentialsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CredentialsViewController.m; sourceTree = "<group>"; };
+		DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		DFF8166C18E627B000D2A7D6 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,9 +108,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFF8165C18E5FCE700D2A7D6 /* AudioToolbox.framework in Frameworks */,
+				DFF8165D18E5FCE700D2A7D6 /* CFNetwork.framework in Frameworks */,
+				DFF8165E18E5FCE700D2A7D6 /* CoreLocation.framework in Frameworks */,
+				DFF8165F18E5FCE700D2A7D6 /* libz.dylib in Frameworks */,
+				DFF8166018E5FCE700D2A7D6 /* MobileCoreServices.framework in Frameworks */,
+				DFF8166118E5FCE700D2A7D6 /* QuartzCore.framework in Frameworks */,
+				DFF8166218E5FCE700D2A7D6 /* Security.framework in Frameworks */,
+				DFF8166318E5FCE700D2A7D6 /* StoreKit.framework in Frameworks */,
+				DFF8166418E5FCE700D2A7D6 /* SystemConfiguration.framework in Frameworks */,
 				DF3384F018E1659E000122A9 /* CoreGraphics.framework in Frameworks */,
 				DF3384F218E1659E000122A9 /* UIKit.framework in Frameworks */,
+				DFF8165218E5FCA900D2A7D6 /* Parse.framework in Frameworks */,
 				DF3384EE18E1659E000122A9 /* Foundation.framework in Frameworks */,
+				DFF8166B18E61DCA00D2A7D6 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +160,17 @@
 		DF3384EC18E1659E000122A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */,
+				DFF8165318E5FCE700D2A7D6 /* AudioToolbox.framework */,
+				DFF8165418E5FCE700D2A7D6 /* CFNetwork.framework */,
+				DFF8165518E5FCE700D2A7D6 /* CoreLocation.framework */,
+				DFF8165618E5FCE700D2A7D6 /* libz.dylib */,
+				DFF8165718E5FCE700D2A7D6 /* MobileCoreServices.framework */,
+				DFF8165818E5FCE700D2A7D6 /* QuartzCore.framework */,
+				DFF8165918E5FCE700D2A7D6 /* Security.framework */,
+				DFF8165A18E5FCE700D2A7D6 /* StoreKit.framework */,
+				DFF8165B18E5FCE700D2A7D6 /* SystemConfiguration.framework */,
+				DFF8165118E5FCA900D2A7D6 /* Parse.framework */,
 				DF3384ED18E1659E000122A9 /* Foundation.framework */,
 				DF3384EF18E1659E000122A9 /* CoreGraphics.framework */,
 				DF3384F118E1659E000122A9 /* UIKit.framework */,
@@ -144,6 +194,10 @@
 				DF3384F418E1659E000122A9 /* Supporting Files */,
 				DFEC046718E4B3E5007822B1 /* GlanceViewController.h */,
 				DFEC046818E4B3E5007822B1 /* GlanceViewController.m */,
+				DFF8166518E5FFFB00D2A7D6 /* CredentialsViewController.h */,
+				DFF8166618E5FFFB00D2A7D6 /* CredentialsViewController.m */,
+				DFF8166C18E627B000D2A7D6 /* SignUpViewController.h */,
+				DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */,
 			);
 			path = WaitTimes;
 			sourceTree = "<group>";
@@ -305,7 +359,9 @@
 				DFEC046618E4AEA7007822B1 /* ApplyChangeInFont.m in Sources */,
 				DF3384FE18E1659E000122A9 /* AppDelegate.m in Sources */,
 				DFEC046918E4B3E5007822B1 /* GlanceViewController.m in Sources */,
+				DFF8166718E5FFFB00D2A7D6 /* CredentialsViewController.m in Sources */,
 				DF3384FA18E1659E000122A9 /* main.m in Sources */,
+				DFF8166E18E627B000D2A7D6 /* SignUpViewController.m in Sources */,
 				DFEC046318E4AD89007822B1 /* GlanceViewTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +479,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/gavargas/Developer/wait-times-ios",
+					/Users/gavargas/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
 				INFOPLIST_FILE = "WaitTimes/WaitTimes-Info.plist";
@@ -437,6 +498,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/gavargas/Developer/wait-times-ios",
+					/Users/gavargas/Documents/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WaitTimes/WaitTimes-Prefix.pch";
 				INFOPLIST_FILE = "WaitTimes/WaitTimes-Info.plist";

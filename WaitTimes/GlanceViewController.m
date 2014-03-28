@@ -24,13 +24,54 @@
     return self;
 }
 
+
+
+
+//Do the initial settings first after the Glance Page has loaded.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
+    
+    
+    //Check if the user is already logged in otherwise send them to the login/signup screen.
+   
+    //Create a parse request for the current user and then save it to the variable currentUser
+    PFUser *currentUser = [PFUser currentUser];
+    
+    //Connect to Parse and check if the current user is logged in or not that returns a BOOL and continues with the if statement below.
+    if (currentUser) {
+        //For testing purposes we send to the terminal what is the username of the person logged in.
+        NSLog(@"Current user that is logged in: %@", currentUser.username);
+        
+    } else {
+        [self performSegueWithIdentifier:@"showLoginScreen" sender:self];
+    }
+    
     //Do some graphical housekeeping, remove the separators given by default in iOS7.
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationItem.hidesBackButton = NO;
+    [self.navigationController setNavigationBarHidden:NO];
+}
+
+
+#pragma mark - Login View Setup
+//We prepare to hide the top title of the nav bar.
+
+
+
+
+//Change the height of a cell in a TableViewController to a specific number in this case it is 125, this is asusming
+//that our cell will always have one line in all labels.
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 125;
+}
+
 
 
 - (void)didReceiveMemoryWarning
@@ -148,9 +189,12 @@
  */
 
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 125;
-}
 
+- (IBAction)addItemToGlanceView:(id)sender {
+    
+    [PFUser logOut];
+    PFUser *currentUser = [PFUser currentUser]; // this will now be nil
+    NSLog(@"currentUser = %@", currentUser);
+    [self performSegueWithIdentifier:@"showLoginScreen" sender:self];
+}
 @end

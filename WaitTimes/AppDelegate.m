@@ -13,6 +13,26 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
+    //Load the Parse Library, which will simplfy many aspects especially at the Startup phase of our company.
+    
+    [Parse setApplicationId:@"goPZUvavNNgVdJ6SAd1WBLNfoxTWGKt5x39T5G9Q"
+                  clientKey:@"R0uQqzLakvLrLbciSRFW4LJ01v9VtekQ3XYr0ArX"];
+    
+    //Parse Twitter Sign in initialisation follows
+    
+    [PFTwitterUtils initializeWithConsumerKey:@"v3L52qQd0jDOtOwyshLk04Oo3"
+                               consumerSecret:@"yViTGSuG7YWFEfSjbfhdEI7jQV61LKB0qEVYOpxtZ9GjIOMJ0W"];
+    
+    //Initialise parse Facebook Login SDK
+    
+    [PFFacebookUtils initializeFacebook];
+    
+    
+    
+    //Add Parse Framework statistic tracking.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
+    
 //    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithHue:.215 saturation:.15 brightness:.17 alpha:1]];
     
     [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithHue:0.5972 saturation:0.29 brightness:0.62 alpha:1], NSForegroundColorAttributeName, [UIFont fontWithName:@"OpenSans-Light" size:18.0], NSFontAttributeName, nil]];
@@ -38,12 +58,27 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    //Initialisation of Facebook with Parse Framework
+    [FBAppCall handleDidBecomeActiveWithSession:[PFFacebookUtils session]];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+
+#pragma mark - Facebook with Parse Framework Handlers
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    return [FBAppCall handleOpenURL:url
+                  sourceApplication:sourceApplication
+                        withSession:[PFFacebookUtils session]];
+}
+
 
 @end
