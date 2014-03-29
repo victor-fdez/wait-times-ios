@@ -23,6 +23,11 @@
     self.navigationItem.hidesBackButton = NO;
     [self.navigationController setNavigationBarHidden:NO];
     
+    //Change the fonts of the textfields.
+    self.signUpTitleLabel.font = [UIFont fontWithName:@"OpenSans-Light" size:25];
+    self.emailField.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
