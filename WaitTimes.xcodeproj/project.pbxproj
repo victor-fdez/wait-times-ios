@@ -206,13 +206,13 @@
 				DFEC046418E4AEA7007822B1 /* ApplyChangeInFont.h */,
 				DFEC046518E4AEA7007822B1 /* ApplyChangeInFont.m */,
 				DF3384FF18E1659E000122A9 /* Images.xcassets */,
-				DF3384F418E1659E000122A9 /* Supporting Files */,
 				DFEC046718E4B3E5007822B1 /* GlanceViewController.h */,
 				DFEC046818E4B3E5007822B1 /* GlanceViewController.m */,
 				DFF8166518E5FFFB00D2A7D6 /* CredentialsViewController.h */,
 				DFF8166618E5FFFB00D2A7D6 /* CredentialsViewController.m */,
 				DFF8166C18E627B000D2A7D6 /* SignUpViewController.h */,
 				DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */,
+				DF3384F418E1659E000122A9 /* Supporting Files */,
 			);
 			path = WaitTimes;
 			sourceTree = "<group>";
