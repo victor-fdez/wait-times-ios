@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF31D7BE18EB6AA500B078EA /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31D7BD18EB6AA500B078EA /* Bridge.m */; };
 		DF3384EE18E1659E000122A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384ED18E1659E000122A9 /* Foundation.framework */; };
 		DF3384F018E1659E000122A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384EF18E1659E000122A9 /* CoreGraphics.framework */; };
 		DF3384F218E1659E000122A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384F118E1659E000122A9 /* UIKit.framework */; };
@@ -64,6 +65,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF31D7BC18EB6AA500B078EA /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		DF31D7BD18EB6AA500B078EA /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
 		DF3384EA18E1659E000122A9 /* WaitTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF3384ED18E1659E000122A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF3384EF18E1659E000122A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -212,6 +215,8 @@
 				DFF8166618E5FFFB00D2A7D6 /* CredentialsViewController.m */,
 				DFF8166C18E627B000D2A7D6 /* SignUpViewController.h */,
 				DFF8166D18E627B000D2A7D6 /* SignUpViewController.m */,
+				DF31D7BC18EB6AA500B078EA /* Bridge.h */,
+				DF31D7BD18EB6AA500B078EA /* Bridge.m */,
 				DF3384F418E1659E000122A9 /* Supporting Files */,
 			);
 			path = WaitTimes;
@@ -395,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF31D7BE18EB6AA500B078EA /* Bridge.m in Sources */,
 				DFEC046618E4AEA7007822B1 /* ApplyChangeInFont.m in Sources */,
 				DF3384FE18E1659E000122A9 /* AppDelegate.m in Sources */,
 				DFEC046918E4B3E5007822B1 /* GlanceViewController.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import "GlanceViewController.h"
 #import "GlanceViewTableCell.h"
+#import "GlanceViewTableCell.h"
 
 @interface GlanceViewController ()
 
@@ -32,6 +33,11 @@
 {
     [super viewDidLoad];
     
+    Bridge *bridge = [[Bridge alloc] init];
+    
+    bridge.bridgeName = @"Name not available";
+    bridge.calculatedWaitTime = @"time not available";
+    
     
     
     //Check if the user is already logged in otherwise send them to the login/signup screen.
@@ -43,6 +49,42 @@
     if (currentUser) {
         //For testing purposes we send to the terminal what is the username of the person logged in.
         NSLog(@"Current user that is logged in: %@", currentUser.username);
+        
+        
+        
+        NSURL *jSONCalculatedDataFromServer = [NSURL URLWithString:@"http://72.191.185.122/jsonTest/jsonTestFile"];
+        
+        
+        NSData *calculatedDataFromServer = [NSData dataWithContentsOfURL:jSONCalculatedDataFromServer];
+        
+        
+        NSError *error = nil;
+        
+        NSDictionary *componentsOfjSONDataDictionary = [NSJSONSerialization JSONObjectWithData:calculatedDataFromServer options:0 error:&error];
+        
+        NSLog(@"%@", componentsOfjSONDataDictionary);
+        
+        self.bridges = [NSMutableArray array];
+        
+        NSArray *bridgesArray = [componentsOfjSONDataDictionary objectForKey:@"bridges"];
+        
+        for (NSDictionary *bridgeInformationDictionary in bridgesArray) {
+            Bridge *bridgeItem = [Bridge bridgeWithName:[bridgeInformationDictionary objectForKey:@"name"]];
+            NSLog(@"%@", bridgeItem.bridgeName);
+            
+            bridgeItem.calculatedWaitTime = [bridgeInformationDictionary objectForKey:@"calculatedTime"];
+            NSLog(@"%@", bridgeItem.calculatedWaitTime);
+            
+            bridgeItem.qualitativePropertiesOfTraffic = [bridgeInformationDictionary objectForKey:@"qualitativeProperty"];
+            NSLog(@"%@", bridgeItem.qualitativePropertiesOfTraffic);
+            
+            
+//          bridgeItem.directionIsNorthward = [bridgeInformationDictionary objectForKey:@"directionIsNorthward"];
+            
+            
+            [self.bridges addObject:bridgeItem];
+        }
+        
         
     } else {
         [self performSegueWithIdentifier:@"showLoginScreen" sender:self];
@@ -93,7 +135,7 @@
 {
 
     // Return the number of rows in the section.
-    return 5;
+    return [self.bridges count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -106,87 +148,26 @@
         cell = [nib objectAtIndex:0];
     }
     
-    // Configure the cell...
+    Bridge *bridgeCell = [self.bridges objectAtIndex:indexPath.row];
+    
+    cell.glanceViewBridgeTitle.text = bridgeCell.bridgeName;
+    cell.glanceViewWaitTimeNumber.text = bridgeCell.calculatedWaitTime;
+    cell.glanceViewWaitTimeDescription.text = bridgeCell.qualitativePropertiesOfTraffic;
+    NSLog(@"%@", bridgeCell.bridgeName);
+    NSLog(@"%@", bridgeCell.calculatedWaitTime);
+    NSLog(@"%@", bridgeCell.qualitativePropertiesOfTraffic);
     
     return cell;
 }
+
+
+
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
- 
- 
- - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
- {
- static NSString *simpleTableIdentifier = @"SimpleTableCell";
- 
- SimpleTableCell *cell = (SimpleTableCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier];
- if (cell == nil)
- {
- NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"SimpleTableCell" owner:self options:nil];
- cell = [nib objectAtIndex:0];
- }
- 
- cell.nameLabel.text = [tableData objectAtIndex:indexPath.row];
- cell.thumbnailImageView.image = [UIImage imageNamed:[thumbnails objectAtIndex:indexPath.row]];
- cell.prepTimeLabel.text = [prepTime objectAtIndex:indexPath.row];
- 
- return cell;
- }
- 
- 
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a story board-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-
- */
 
 
 

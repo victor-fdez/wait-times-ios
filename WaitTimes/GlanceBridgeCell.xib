@@ -62,7 +62,7 @@
                 <outlet property="glanceViewFromDirectionFlagIndicator" destination="Bo2-14-NJ9" id="SyL-qq-Dkc"/>
                 <outlet property="glanceViewToDirectionFlagIndicator" destination="Pm6-Fa-3M5" id="Iee-up-X3I"/>
                 <outlet property="glanceViewWaitTimeDescription" destination="RcW-Fe-sok" id="FNN-wK-m57"/>
-                <outlet property="glanceViewWaitTimeNumber" destination="SYT-Hz-eMC" id="ZDN-v4-cFp"/>
+                <outlet property="glanceViewWaitTimeNumber" destination="SYT-Hz-eMC" id="UFc-Ia-061"/>
             </connections>
         </tableViewCell>
     </objects>
