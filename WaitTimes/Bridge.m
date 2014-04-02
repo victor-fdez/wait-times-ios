@@ -7,8 +7,11 @@
 //
 
 #import "Bridge.h"
+#import "GlanceViewController.h"
 
 @implementation Bridge
+
+@synthesize formattedTime;
 
 - (id) initWithBridgeName:(NSString *)bridgeName
 {
@@ -30,13 +33,16 @@
     return [[self alloc] initWithBridgeName:bridgeName];
 }
 
-
-- (NSString *) formattedTime {
-    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
-    [timeFormatter setDateFormat:@"HH 'h' mm 'min'"];
-    NSDate *timeToConvert = [timeFormatter dateFromString:self.calculatedWaitTime];
-    
-    return [timeFormatter stringFromDate:timeToConvert];
-}
+//- ( *) formattedTime {
+//    
+//    
+//    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+//    [timeFormatter setDateFormat:@"HH 'h' mm 'min'"];
+//    NSDate *timeToConvert = [timeFormatter dateFromString:self.calculatedWaitTime];
+//    
+//    NSLog(@"Time to convert: %@", timeFormatter);
+//    
+//    return [timeFormatter stringFromDate:timeToConvert];
+//}
 
 @end

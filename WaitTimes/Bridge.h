@@ -13,8 +13,8 @@
 //Data needed to create the entry
 @property (nonatomic, strong) NSString *bridgeName;
 @property (nonatomic, strong) NSString *calculatedWaitTime;
-@property (nonatomic, strong) NSString *formattedTime;
-@property (nonatomic, strong) NSArray *qualitativePropertiesOfTraffic;
+@property NSString *formattedTime;
+@property (nonatomic, strong) NSString *qualitativePropertiesOfTraffic;
 @property BOOL *directionIsNorthward;
 
 
