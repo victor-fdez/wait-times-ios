@@ -26,6 +26,9 @@
     //Change the fonts of the textfields.
     self.signUpTitleLabel.font = [UIFont fontWithName:@"OpenSans-Light" size:25];
     self.emailField.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
+    self.passwordField.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
+    self.firstNameField.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
+    self.lastNameField.font = [UIFont fontWithName:@"OpenSans-Light" size:12];
     
     
 }
