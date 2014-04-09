@@ -76,7 +76,19 @@
             }
         }];
     }
+}
 
+#pragma mark -Tap anywhere resign responder
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [[event allTouches] anyObject];
+    if (([_emailField isFirstResponder] && [touch view] != _emailField) || ([_passwordField isFirstResponder] && [touch view] != _passwordField) || ([_firstNameField isFirstResponder] && [touch view] != _firstNameField) || ([_lastNameField isFirstResponder] && [touch view] != _lastNameField)) {
+        [_emailField resignFirstResponder];
+        [_passwordField resignFirstResponder];
+        [_firstNameField resignFirstResponder];
+        [_lastNameField resignFirstResponder];
+    }
     
 }
+
 @end

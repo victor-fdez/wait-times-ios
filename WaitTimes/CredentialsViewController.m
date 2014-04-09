@@ -22,19 +22,11 @@
 
     #pragma mark - Visual Setup of Login/Signup screen
     self.appTitleAtLoginScreen.font = [UIFont fontWithName:@"OpenSans-light" size:48];
+    self.usernameField.font = [UIFont fontWithName:@"OpenSans-Light" size:14];
+    self.passwordField.font = [UIFont fontWithName:@"OpenSans-Light" size:14];
     
-    //Create a handler for dismissing the keyboard once clicking anything outside of the keyboard
+    //Video background code, this needs to be checked in an actual device, because on my laptop it seems to be crashing and not playing but it could be my computers power is not enough already with the emulation.
     
-}
-
-//Hide the Navigation bar for the login screen and the back button.
-- (void)viewWillAppear:(BOOL)animated
-{
-    self.navigationItem.hidesBackButton = YES;
-    [self.navigationController setNavigationBarHidden:YES];
-    
-    //Video Background?
-
     self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"moments" ofType:@"mp4"]]];
     [self.moviePlayer.view setFrame:self.view.bounds];
     [self.moviePlayer setFullscreen: NO];
@@ -43,8 +35,23 @@
     [self.moviePlayer setControlStyle:MPMovieControlStyleNone];
     [self.moviePlayer setRepeatMode:MPMovieRepeatModeOne];
     [self.moviePlayer play];
-    [self.view insertSubview:self.moviePlayer.view atIndex:3];
+    [self.view insertSubview:self.moviePlayer.view atIndex:1];
     
+    
+}
+
+//Change of the status bar at the top
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
+//Hide the Navigation bar for the login screen and the back button.
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.navigationItem.hidesBackButton = YES;
+    [self.navigationController setNavigationBarHidden:YES];
 }
 
 
