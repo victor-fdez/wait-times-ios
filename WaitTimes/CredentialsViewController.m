@@ -8,6 +8,7 @@
 
 #import "CredentialsViewController.h"
 
+
 @interface CredentialsViewController ()
 
 @end
@@ -31,10 +32,20 @@
 {
     self.navigationItem.hidesBackButton = YES;
     [self.navigationController setNavigationBarHidden:YES];
+    
+    //Video Background?
+
+    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"moments" ofType:@"mp4"]]];
+    [self.moviePlayer.view setFrame:self.view.bounds];
+    [self.moviePlayer setFullscreen: NO];
+    [self.moviePlayer setAllowsAirPlay: NO];
+    [self.moviePlayer setScalingMode:MPMovieScalingModeAspectFill];
+    [self.moviePlayer setControlStyle:MPMovieControlStyleNone];
+    [self.moviePlayer setRepeatMode:MPMovieRepeatModeOne];
+    [self.moviePlayer play];
+    [self.view insertSubview:self.moviePlayer.view atIndex:3];
+    
 }
-
-
-
 
 
 - (void)didReceiveMemoryWarning

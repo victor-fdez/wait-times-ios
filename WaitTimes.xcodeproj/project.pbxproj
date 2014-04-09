@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF2CC6F018F49C8900FE2527 /* moments.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2CC6EF18F49C8900FE2527 /* moments.mp4 */; };
+		DF2CC6F218F49CE600FE2527 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2CC6F118F49CE600FE2527 /* AVFoundation.framework */; };
+		DF2CC6F418F4C92D00FE2527 /* cars.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DF2CC6F318F4C8E800FE2527 /* cars.mp4 */; };
 		DF31D7BE18EB6AA500B078EA /* Bridge.m in Sources */ = {isa = PBXBuildFile; fileRef = DF31D7BD18EB6AA500B078EA /* Bridge.m */; };
 		DF3384EE18E1659E000122A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384ED18E1659E000122A9 /* Foundation.framework */; };
 		DF3384F018E1659E000122A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF3384EF18E1659E000122A9 /* CoreGraphics.framework */; };
@@ -57,6 +60,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DF2CC6EF18F49C8900FE2527 /* moments.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = moments.mp4; sourceTree = "<group>"; };
+		DF2CC6F118F49CE600FE2527 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DF2CC6F318F4C8E800FE2527 /* cars.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cars.mp4; sourceTree = "<group>"; };
 		DF31D7BC18EB6AA500B078EA /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		DF31D7BD18EB6AA500B078EA /* Bridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bridge.m; sourceTree = "<group>"; };
 		DF3384EA18E1659E000122A9 /* WaitTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaitTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2CC6F218F49CE600FE2527 /* AVFoundation.framework in Frameworks */,
 				DFF8165C18E5FCE700D2A7D6 /* AudioToolbox.framework in Frameworks */,
 				DFF8165D18E5FCE700D2A7D6 /* CFNetwork.framework in Frameworks */,
 				DFF8165E18E5FCE700D2A7D6 /* CoreLocation.framework in Frameworks */,
@@ -163,6 +170,7 @@
 		DF3384EC18E1659E000122A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DF2CC6F118F49CE600FE2527 /* AVFoundation.framework */,
 				DFF8166A18E61DCA00D2A7D6 /* FacebookSDK.framework */,
 				DFF8165318E5FCE700D2A7D6 /* AudioToolbox.framework */,
 				DFF8165418E5FCE700D2A7D6 /* CFNetwork.framework */,
@@ -210,6 +218,8 @@
 		DF3384F418E1659E000122A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DF2CC6F318F4C8E800FE2527 /* cars.mp4 */,
+				DF2CC6EF18F49C8900FE2527 /* moments.mp4 */,
 				DFCF598A18E2B02F007447DF /* images */,
 				DF33852218E16693000122A9 /* fonts */,
 				DF3384F518E1659E000122A9 /* WaitTimes-Info.plist */,
@@ -333,6 +343,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF2CC6F418F4C92D00FE2527 /* cars.mp4 in Resources */,
 				DF33852118E16687000122A9 /* OpenSans-Regular.ttf in Resources */,
 				DF3384F818E1659E000122A9 /* InfoPlist.strings in Resources */,
 				DF33850018E1659E000122A9 /* Images.xcassets in Resources */,
@@ -341,6 +352,7 @@
 				DFCF598918E2B022007447DF /* US.png in Resources */,
 				DFCF598818E2B022007447DF /* MX.png in Resources */,
 				DFCF598718E2B022007447DF /* CA.png in Resources */,
+				DF2CC6F018F49C8900FE2527 /* moments.mp4 in Resources */,
 				DF33852418E16784000122A9 /* MainStoryboard.storyboard in Resources */,
 				DFF6DE3F18E20DF000758541 /* GlanceBridgeCell.xib in Resources */,
 			);

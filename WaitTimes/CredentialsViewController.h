@@ -9,13 +9,14 @@
 #import <UIKit/UIKit.h>
 #import <Parse/Parse.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface CredentialsViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *appTitleAtLoginScreen;
 @property (weak, nonatomic) IBOutlet UITextField *usernameField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) NSArray *permissions;
-
+@property (strong, nonatomic) MPMoviePlayerController *moviePlayer;
 
 
 - (IBAction)createAccountActionWithNormalCredentials:(id)sender;
@@ -26,5 +27,7 @@
 
 - (IBAction)userNameReturnPress:(id)sender;
 - (IBAction)passwordReturnPress:(id)sender;
+
+
 
 @end
