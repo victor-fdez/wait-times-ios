@@ -187,6 +187,19 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
 
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"preapring for segue: %@", segue.identifier);
+    
+//    if ([segue.identifier isEqualToString:@"showDetailedView"]) {
+//        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+//        Bridge *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+//        WebViewController *wbc = (WebViewController *)segue.destinationViewController;
+//        wbc.blogPostURL = blogPost.url;
+//    }
+}
+
+
 
 
 //For testing purposes the add bridge button does logout, but it will take to a screen where we can add more bridges.

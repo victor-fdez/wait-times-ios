@@ -18,4 +18,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *signUpTitleLabel;
 
 - (IBAction)signUpActionWithNormalCredentials:(id)sender;
+//- (IBAction)forgotMyPasswordButton:(id)sender;
+- (IBAction)goBackToLoginAction:(id)sender;
+
+#pragma mark - Forgotten Password Actions from the Login Screen
+
+- (IBAction)forgotPasswordActionFromSignUpView:(id)sender;
+
 @end

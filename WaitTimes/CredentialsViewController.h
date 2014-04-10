@@ -28,6 +28,9 @@
 - (IBAction)userNameReturnPress:(id)sender;
 - (IBAction)passwordReturnPress:(id)sender;
 
+#pragma mark - Forgotten Password Actions from the Login Screen
+
+- (IBAction)forgotPasswordActionFromLogin:(id)sender;
 
 
 @end

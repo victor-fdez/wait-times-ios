@@ -72,10 +72,20 @@
                 [invalidSignUpInformationAlertView show];
             }
             else {
-                [self.navigationController popToRootViewControllerAnimated:YES];
+                [self.navigationController performSegueWithIdentifier:@"showSuccessAtSigningUpUser" sender:self];
             }
         }];
     }
+}
+
+- (IBAction)forgotMyPasswordButton:(id)sender {
+    
+}
+
+
+- (IBAction)goBackToLoginAction:(id)sender {
+//    [self performSegueWithIdentifier:@"showLoginScreen" sender:self];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark -Tap anywhere resign responder
@@ -91,4 +101,8 @@
     
 }
 
+#pragma mark - Forgotten Password Actions from the Login Screen
+- (IBAction)forgotPasswordActionFromSignUpView:(id)sender {
+    [self performSegueWithIdentifier:@"showForgotPasswordModalFromSignUp" sender:self];
+}
 @end

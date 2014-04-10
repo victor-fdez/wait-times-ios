@@ -27,7 +27,7 @@
     
     //Video background code, this needs to be checked in an actual device, because on my laptop it seems to be crashing and not playing but it could be my computers power is not enough already with the emulation.
     
-    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"moments" ofType:@"mp4"]]];
+    self.moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"traffic" ofType:@"mp4"]]];
     [self.moviePlayer.view setFrame:self.view.bounds];
     [self.moviePlayer setFullscreen: NO];
     [self.moviePlayer setAllowsAirPlay: NO];
@@ -130,7 +130,6 @@
 }
 
 - (IBAction)passwordReturnPress:(id)sender {
-    
     [sender resignFirstResponder];
 }
 
@@ -144,5 +143,9 @@
     
 }
 
+#pragma mark - Forgotten Password Actions from the Login Screen
 
+- (IBAction)forgotPasswordActionFromLogin:(id)sender {
+    [self performSegueWithIdentifier:@"showForgotPasswordModalFromLogin" sender:self];
+}
 @end
