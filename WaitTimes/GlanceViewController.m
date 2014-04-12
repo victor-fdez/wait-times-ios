@@ -185,6 +185,10 @@
 {
     //Deselect the cell manually, because it doesn't deselect by default.
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
+    NSLog(@"Clicked the row number: %ld", (long)indexPath.row);
+    NSIndexPath *indexPathOfTable = [self.tableView indexPathForSelectedRow];
+    Bridge *bridgePart = [self.bridges objectAtIndex:indexPathOfTable.row];
+    [self performSegueWithIdentifier:@"showDetailedView" sender:self];
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

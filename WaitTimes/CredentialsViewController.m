@@ -148,4 +148,17 @@
 - (IBAction)forgotPasswordActionFromLogin:(id)sender {
     [self performSegueWithIdentifier:@"showForgotPasswordModalFromLogin" sender:self];
 }
+
+//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier sender:(id)sender
+//{
+//    if (self.tableView == self)
+//    {
+//        
+//        [self performSegueWithIdentifier:@"showDetail"sender:self];
+//        return YES;
+//    }
+//    
+//    return NO;
+//}
+
 @end

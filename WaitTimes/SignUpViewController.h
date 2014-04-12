@@ -23,6 +23,5 @@
 
 #pragma mark - Forgotten Password Actions from the Login Screen
 
-- (IBAction)forgotPasswordActionFromSignUpView:(id)sender;
 
 @end

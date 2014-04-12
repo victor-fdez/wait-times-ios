@@ -1,0 +1,13 @@
+PODS:
+  - JBChartView (2.1.6)
+  - PKRevealController (2.0.6)
+
+DEPENDENCIES:
+  - JBChartView (~> 2.1.5)
+  - PKRevealController
+
+SPEC CHECKSUMS:
+  JBChartView: c75f27a91b92c7f230a21feaa06d95c24e47290a
+  PKRevealController: 883287432cecf4cda037184eb822548b9713f8c2
+
+COCOAPODS: 0.31.1
